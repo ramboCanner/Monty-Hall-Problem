@@ -15,9 +15,9 @@ int main(){
     cout<<"Now running the simulation "<<tt<<" times"<<endl;
     srand(time(NULL));
     //get a counter for total times
-    int cunt = 0;
+    int cnt = 0;
     int rt = 0;
-    while(cunt < tt){
+    while(cnt < tt){
         //get correct door
         int cd = rand() % 3;
         //get computer guess
@@ -53,9 +53,9 @@ int main(){
         else{
             //cout<<"WRONG DOOR"<<endl;
         }
-        cunt++;
+        cnt++;
     }
-    double percent = double(rt) / double(cunt);
+    double percent = double(rt) / double(cnt);
     cout<<"\n\n\nThe result is "<<percent<<endl<<endl<<endl<<endl;
     cout<<"And therefore variable change exists"<<endl;
     cout<<"FIN"<<endl;
